@@ -20,3 +20,14 @@ done
 
 echo -e "\nmysql ready"
 ```
+
+# 리눅스 특수 문자 정리
+http://jdm.kr/blog/4
+
+## 표준 출력 
+1. 표준 출력 new (>)
+```shell
+ls > text.txt
+```
+
+2. 표준 출력 append (>>)
