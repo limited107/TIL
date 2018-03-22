@@ -5,3 +5,18 @@ $ cal
 
 # 직전 입력 명령(cal)에 대한 exit code 출력 
 $ echo $?
+```
+
+# mysql의 start up 기다리기 
+```shell
+#!/bin/bash
+
+echo "Waiting for mysql"
+until mysql -h"$MYSQL_HOST" -P"$MYSQL_PORT" -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" -e '\q'
+do
+  printf "."
+  sleep 1
+done
+
+echo -e "\nmysql ready"
+```
