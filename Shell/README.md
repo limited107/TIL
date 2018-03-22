@@ -7,7 +7,7 @@ $ cal
 $ echo $?
 ```
 
-# mysql의 start up 기다리기 
+# mysql의 startup 기다리기 
 ```shell
 #!/bin/bash
 
