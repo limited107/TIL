@@ -1,0 +1,4 @@
+# commit의 시간을 수정할 수 있음 
+
+git redate --commits 3
+https://github.com/PotatoLabs/git-redate
