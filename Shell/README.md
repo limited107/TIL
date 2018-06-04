@@ -7,20 +7,6 @@ $ cal
 $ echo $?
 ```
 
-# mysql의 startup 기다리기 
-```shell
-#!/bin/bash
-
-echo "Waiting for mysql"
-until mysql -h"$MYSQL_HOST" -P"$MYSQL_PORT" -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" -e '\q'
-do
-  printf "."
-  sleep 1
-done
-
-echo -e "\nmysql ready"
-```
-
 # 리눅스 특수 문자 정리
 http://jdm.kr/blog/4
 
