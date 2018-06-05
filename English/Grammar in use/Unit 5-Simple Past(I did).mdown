@@ -46,7 +46,7 @@ shut -> shut
 * B: Yes, I **went** to the movies, but I **didn't enjoy** the film much.
 * "When **did** Mr. Thomas **die**?" "About 10 years ago."
 * They **didn't invite** her to the party, so she **didn't go.**
-* "**Did** you **have** time to write the letter?" "No, I **didn't."
+* "**Did** you **have** time to write the letter?" "No, I **didn't**."
 
 * What **did** you **do** on the weekend? (not What did you on the weekend?)
 
