@@ -52,6 +52,7 @@ shut -> shut
 
 ## D. The past of **be** (**am**/**is**/**are**) is **was** / **were**
 I/he/she/it **was**/**wasn't**
+
 we/you/they **were**/**waren't**
 
 ### 의문문, 부정문에서 did를 사용하지 않음에 유의 
