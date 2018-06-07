@@ -1,0 +1,5 @@
+1. rabbitmq의 사용자 및 암호 설정하기
+암호를 hash해서 넣어야하는데, 그냥 sha256을 하는것과 다름.
+guest/guest의 경우 비밀번호로 RHp8PmPTb6a1e5Lti157e1PRFCit9IukzO+qDRWtRCSHlO74 을 넣어야함.
+
+https://groups.google.com/forum/#!topic/rabbitmq-users/Brx3tSmNC_8
