@@ -1,0 +1,1 @@
+* entity가 변경될 때에만 update query가 수행된다. 그렇지 않으면 Repository#save 호출해도 update 수행 안됨 
