@@ -17,3 +17,15 @@ ls > text.txt
 ```
 
 2. 표준 출력 append (>>)
+
+# shell에서 vi 키맵 사용
+```shell
+set -o vi
+```
+
+# grep
+```shell
+-o : matching only
+-E : extended regex (+ operator 적용됨)
+grep -E -o 'userId : [0-9]+'
+```
