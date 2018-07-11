@@ -1,0 +1,3 @@
+docker run --detach --publish 8080:8080 -v jira_home:/var/atlassian/jira -v jira_install:/opt/atlassian/jira cptactionhank/atlassian-jira-software:latest
+
+* volume이 제대로 적용되는지 확인 
