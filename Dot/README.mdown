@@ -1,1 +1,15 @@
+Dot으로 그릴 graph를 그릴 수 있습니다
+
+```dot
+digraph G {
+rankdir=LR;
+node [shape=box, color=blue]
+
+
+운송장출력 -> 집하[label="invoiceNumber"];
+집하 -> 간선입고1 -> 간선출고 -> 간선입고2 -> 배송출발;
+운송장출력 -> 미집하[label="invoiceNumber"];
+
+}
+```
 
