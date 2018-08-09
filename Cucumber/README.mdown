@@ -1,0 +1,62 @@
+# Cucumber tests를 parallel로 실행할 수 있다
+https://github.com/prashant-ramcharan/courgette-jvm
+
+## 예시 프로젝트
+https://github.com/prashant-ramcharan/courgette-jvm-selenium
+
+## 적용 방법
+### 1. build.gradle에 다음 내용 추가
+```groovy
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // Cucumber tests in parallel
+    compile 'io.github.prashant-ramcharan:courgette-jvm:2.4.0'
+    testCompile 'io.github.prashant-ramcharan:courgette-jvm:2.4.0'
+}
+
+task regressionSuite(type: Test) {
+    include '**/MyIntegrationTest.class' //TODO: MyIntegrationTest에 Cucumber options 등이 입력됨 
+
+    outputs.upToDateWhen { false }
+}
+
+```
+
+### 2. CucumberTest.class에 courgette-jvm option 추가 
+* courgette-jvm 적용 이전 
+```java
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		strict = true,
+		glue = { "net.hotplayer.step"},
+		features = "src/test/resources/scenario/my-feature.feature",
+		plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"})
+```
+
+* courgette-jvm 적용 이후 
+```java
+@RunWith(Courgette.class)
+@CourgetteOptions(
+		threads = 2,
+		runLevel = CourgetteRunLevel.SCENARIO,
+		rerunFailedScenarios = true,
+		showTestOutput = true,
+		reportTargetDir = "build",
+		cucumberOptions = @CucumberOptions(
+				features = "src/test/resources/scenario/my-feature.feature",
+				glue = "net.hotplayer.step",
+				plugin = {
+						"pretty",
+						"json:build/cucumber-report/cucumber.json",
+						"html:build/cucumber-report/cucumber.html"},
+				strict = true
+		))
+```
+
+### 3. gradle task 실행 
+```bash
+./gradlew regressionSuite
+```
