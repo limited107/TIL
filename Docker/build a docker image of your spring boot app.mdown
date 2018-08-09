@@ -1,4 +1,4 @@
-https://spring.io/guides/gs/spring-boot-docker/
-https://medium.com/@hudsonmendes/docker-spring-boot-microservice-with-gradle-9785087e7992
-https://geowarin.com/build-a-docker-image-of-your-spring-boot-app/
+* https://spring.io/guides/gs/spring-boot-docker/
+* https://medium.com/@hudsonmendes/docker-spring-boot-microservice-with-gradle-9785087e7992
+* https://geowarin.com/build-a-docker-image-of-your-spring-boot-app/
 
