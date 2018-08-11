@@ -1,0 +1,17 @@
+Doamin Driven Design
+
+DDD Start!
+
+setValue() 같은 메서드를 제공하지 않는다면 Money 객체 내용이 바뀔일이 절대 없음. 보다 안전한 코드를 작성할 수 있다.
+
+```java
+public class Money {
+	private BigDecimal value;
+
+	public Money add(Money money) {
+		return new Money(this.value + money.value);
+	}
+
+	// value를 변경할 수 있는 메서드 없음 (immutable)
+}
+```
