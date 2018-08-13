@@ -1,0 +1,35 @@
+# Retryable
+https://www.baeldung.com/spring-retry
+
+# Retryable?
+* Exception일 때 해당 메소드를 maxAttempts 횟수 만큼 반복해서 실행 할 수 있도록 돕는다.
+* 특정 Exception일 때만 retry하려면 include(=value) attribute를 적용한다.
+
+## 1. Maven Dependencies
+```groovy 
+<dependency>
+    <groupId>org.springframework.retry</groupId>
+    <artifactId>spring-retry</artifactId>
+    <version>1.1.5.RELEASE</version>
+</dependency>
+```
+
+## 2. Enabling Spring Retry
+```java
+@Configuration
+@EnableRetry
+public class AppConfig { ... }
+```
+
+## 3. @Retryable 적용
+```java
+@Service
+public interface MyService {
+  @Retryable(
+  maxAttemptsExpression = "#{${retry.maxAttempts}}",
+  backoff = @Backoff(delayExpression = "#{${retry.backoffDelay}}"), 
+  include = AssertionError.class) //include = value와 동일함. include가 없는 경우 모든 exception이 retry 대상
+    void retryService(String sql) throws SQLException;
+    ...
+}
+```
