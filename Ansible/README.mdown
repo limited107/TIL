@@ -1,1 +1,13 @@
+```bash
+ansible -i hosts/my-hosts "phase" -m shell -a \
+"grep -nrT --include \\*.log -m 10 \
+'찾고자하는 것' \
+/log/path"
 
+# 7일 이내 
+ansible -i hosts/my-hosts "phase" -m shell -a \
+"find /log/path \
+-ctime -7 | \
+xargs grep -HnT \
+'찾고자하는 것'"
+```
