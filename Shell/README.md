@@ -29,3 +29,10 @@ set -o vi
 -E : extended regex (+ operator 적용됨)
 grep -E -o 'userId : [0-9]+'
 ```
+
+* -P 옵션을 적용하면 lookbehind regex를 적용할 수 있음.
+https://superuser.com/a/596499
+
+```bash
+grep -h -P '(?<=someText":).*\]' webapp.log
+```
