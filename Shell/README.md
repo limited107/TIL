@@ -27,12 +27,17 @@ set -o vi
 ```shell
 -o : matching only
 -E : extended regex (+ operator 적용됨)
+-P : perl regex 적용 
+
 grep -E -o 'userId : [0-9]+'
 ```
 
 * -P 옵션을 적용하면 lookbehind regex를 적용할 수 있음.
-https://superuser.com/a/596499
+* https://superuser.com/a/596499
+* https://www.regular-expressions.info/lookaround.html
 
 ```bash
-grep -h -P '(?<=someText":).*\]' webapp.log
+grep -o -h -P '(?<=orderIds"):.*\]' webapp.log
 ```
+
+'orderIds:'에 뒤따르고 .*] 에 매칭되는 문자열에 대한 결과만 출력됨 
