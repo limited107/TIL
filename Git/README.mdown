@@ -1,0 +1,7 @@
+# staged 상태(commit 했고, push 안한)에서 실수로 commit을 reset한 경우(--hard) 복구!
+1. branchxx commit(staged 상태, push 안된 상태)
+2. 실수로 branchxx를 origin/branchxx로 reset --hard(파일이 모두 origin 상태로 돌아감)
+3. git reflog에서 reset --hard 하기 전 상태 HEAD@{??}를 확인하고 복구 할 수 있음 (local에 히스토리 일부가 저장되어 있다고 함)
+
+https://suwoni-codelab.com/git/2018/04/07/Git-reflog/
+
