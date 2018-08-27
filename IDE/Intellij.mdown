@@ -1,0 +1,5 @@
+# Idea symbols
+https://www.jetbrains.com/help/idea/symbols.html
+
+Moduel
+Group of modules 
