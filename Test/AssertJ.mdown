@@ -1,0 +1,20 @@
+# AssertJ 예시 
+
+0. soft assertion(error colletor)
+테스트의 어떤 assert에 fail이 발생하더라도, 나머지 assert를 계속해서 실행 후 message를 출력할 수 있게 함
+http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#soft-assertions
+
+1. AbstractAssert.isEqualTo
+값 혹은 reference를 비교
+
+```java
+ // equals not overridden in TolkienCharacter
+ TolkienCharacter frodo = new TolkienCharacter("Frodo", 33, HOBBIT);
+ TolkienCharacter frodoClone = new TolkienCharacter("Frodo", 33, HOBBIT);
+
+ // Fail as equals compares object references
+ assertThat(frodo).isEqualsTo(frodoClone);
+
+ // frodo and frodoClone are equals when doing a field by field comparison.
+ assertThat(frodo).isEqualToComparingFieldByField(frodoClone);
+```
