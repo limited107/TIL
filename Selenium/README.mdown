@@ -1,1 +1,8 @@
+# frame에 있는 element 찾기 
+```java
+WebElement frameElement = driver.findElement(By.xpath("//div[@id='something']/div/iframe"));
+driver.switchTo().frame(frameElement); // 프레임으로 전환 
+// do stuff (frame에서 xpath 등으로 findByElement 가능)
 
+driver.switchTo().defaultContent(); // frame 밖으로 빠져나오기 
+```
