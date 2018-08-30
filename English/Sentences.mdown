@@ -1,0 +1,1 @@
+* Proejct B does not only have a compile dependency on project A but also a test dependency.
