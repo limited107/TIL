@@ -7,3 +7,11 @@ mysql -u[username] -p[password] [database_name] < [file.sql]
 ```bash
 mysqldump -u[username] -p[password] [database_name] > [file.sql]
 ```
+
+# 사용자에게 권한주기
+```bash
+mysql> GRANT ALL PRIVILEGES ON [database].[table] To '[username]'@'[host]';
+mysql> GRANT ALL PRIVILEGES ON *.* To '[username]'@'%'; 
+// 모든 DB, TABLE에 어떤 호스트에 대해 모든 권한 추가
+mysql> FLUSH PRIVILEGES;
+```
