@@ -11,3 +11,6 @@ gradle build : 다음 task 실행
 gradle test : 빌드 전체를 실행하지 않고 테스트만 하고 싶을 때 
 gradle clean : build directory 삭제 
 ```
+
+# Gradle: sub-project test dependencies in multi-project builds
+https://softnoise.wordpress.com/2014/09/07/gradle-sub-project-test-dependencies-in-multi-project-builds/
