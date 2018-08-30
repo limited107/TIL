@@ -1,0 +1,36 @@
+# CSS selector 
+### element:nth-child
+- element type이고 n번째(type에 관계 없이 n번째)인 경우에 선택됨
+
+### element:nth-of-type
+- type에 관계 있는 n번째인 경우에 선택됨 
+
+## 테스트 
+* url : https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_nth-of-type
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body > p:nth-child(2) { 
+    background: yellow;
+}
+
+p:nth-of-type(2) {
+    background: red;
+}
+</style>
+</head>
+<body>
+
+<h1>hello</h1>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+</body>
+</html>
+
+```
