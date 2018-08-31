@@ -1,0 +1,5 @@
+Changing the default spring boot banner.
+
+resources/banner.txt
+
+https://www.boraji.com/spring-boot-changing-the-default-banner-example
