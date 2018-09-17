@@ -1,1 +1,2 @@
-* Proejct B does not only have a compile dependency on project A but also a test dependency.
+* Project B does not only have a compile dependency on project A but also a test dependency.
+* However unlike the out-of-the-box functioning of a single database connection, some manual configuration is required in order to create two or more MongoDB connections with Spring Boot and Spring Data. [http://www.javaoptimum.com/multiple-mongodb-connections-spring-boot/]
