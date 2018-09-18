@@ -8,3 +8,9 @@ String 클래스는 equals()를 오버라이딩하고 있기 때문에 문자열
 //문자열에 있는 \n, \t를 실제 escape chracter로 바꿔준다
 String r1 = response.replace("\\n", "\n").replace("\\t", "\t");
 ```
+# Deep copy
+1. https://stackoverflow.com/questions/2156120/java-recommended-solution-for-deep-cloning-copying-an-instance
+2. https://www.baeldung.com/java-deep-copy
+3. Cloner util을 사용할 수 있음 
+- https://mvnrepository.com/artifact/uk.com.robust-it/cloning
+
