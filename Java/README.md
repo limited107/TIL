@@ -14,3 +14,4 @@ String r1 = response.replace("\\n", "\n").replace("\\t", "\t");
 3. Cloner util을 사용할 수 있음 
 - https://mvnrepository.com/artifact/uk.com.robust-it/cloning
 
+# Lazy Copy(Lazy Loading 느낌!)
