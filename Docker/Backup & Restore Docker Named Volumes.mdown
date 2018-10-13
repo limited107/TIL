@@ -13,8 +13,7 @@ tar -czf /backup_volume/jira_home.tar.gz -C /target_volume ./
 ```
 
 ## 2. 복구(Restore)
-jira_home named volume을 마운트 시키고, 압축을 풉니다. 
-(named volume에 내용을 삭제함.
+jira_home named volume을 마운트 시키고, 압축을 풉니다. (named volume에 내용을 삭제함.)
 - ```*``` matches all non-dot-files
 - ```.[!.]*``` matches all dot files except . 
 - ```..?*``` matches all dot-dot files .., and ..?*
