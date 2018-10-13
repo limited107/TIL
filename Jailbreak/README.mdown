@@ -1,0 +1,12 @@
+# 탈옥(Jailbreak) 11.3
+1. Impactor.app 실행
+2. Electra1131-1.0.3-vfs.ipa를 드래그해서 Impactor 프로그램에 올린다
+3. iCloud 아이디 비밀번호 입력 
+    * iCloud 계정 비밀번호가 노출될 수 있으니 iCloud 계정을 새로 파서 넣음
+4. Elertra 실행
+5. 에어플레인 모드 실행
+6. Electra Jailbreak
+7. Cydia에서 tweak 받음
+    - YouTube Tools (백그라운드 재생, 광고 제거)
+    - Filza File Manager (파일매니저)
+    - iTransmission (torrent client)
