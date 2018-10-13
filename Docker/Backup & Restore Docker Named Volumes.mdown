@@ -8,7 +8,8 @@ Named Volume을 백업하고 복구하는 방법입니다.
 jira_home volume을 host machine의 /tmp/docker_backup_volume/jira_home.tar.gz에 백업
 
 ```
-docker run -it --rm -v jira_home:/target_volume -v /tmp/docker_backup_volume:/backup_volume alpine \\n\ttar -czf /backup_volume/jira_home.tar.gz -C /target_volume ./
+docker run -it --rm -v jira_home:/target_volume -v /tmp/docker_backup_volume:/backup_volume alpine \
+tar -czf /backup_volume/jira_home.tar.gz -C /target_volume ./
 ```
 
 ## 2. 복구(Restore)
