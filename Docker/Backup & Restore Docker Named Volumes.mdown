@@ -16,7 +16,7 @@ jira_home named volume을 마운트 시키고, 압축을 풉니다.
 (named volume에 내용을 삭제함.
 - ```*``` matches all non-dot-files
 - ```.[!.]*``` matches all dot files except . 
-- files whose name begins with .., and ..?* matches all dot-dot files except ...
+- ```..?*``` matches all dot-dot files .., and ..?* except ...
 ```
 docker run -it --rm -v jira_home:/target_volume -v /home/bokuk/Service/docker_volume:/backup_volume alpine \
     sh -c "rm -rf /target_volume/* /target_volume/..?* /target_volume/.[!.]* ; tar -C /target_volume/ -xzf /backup_volume/jira_home.tar.gz"
