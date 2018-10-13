@@ -1,0 +1,30 @@
+# Docker Namaed Volume 백업 및 복구 
+# Backup & Restore Docker Named Volumes
+(reference: https://loomchild.net/2017/03/26/backup-restore-docker-named-volumes/)
+
+Named Volume을 백업하고 복구하는 방법입니다.
+
+## 1. 백업(Backup)
+jira_home volume을 host machine의 /tmp/docker_backup_volume/jira_home.tar.gz에 백업
+
+```
+docker run -it --rm -v jira_home:/target_volume -v /tmp/docker_backup_volume:/backup_volume alpine \\n\ttar -czf /backup_volume/jira_home.tar.gz -C /target_volume ./
+```
+
+## 2. 복구(Restore)
+jira_home named volume을 마운트 시키고, 압축을 풉니다
+```
+docker run -it --rm -v jira_home:/target_volume -v /home/bokuk/Service/docker_volume:/backup_volume alpine \
+    sh -c "rm -rf /target_volume/* /target_volume/..?* /target_volume/.[!.]* ; tar -C /target_volume/ -xzf /backup_volume/jira_home.tar.gz"
+ 
+```
+
+## 3. JIRA Software Container 실행
+```
+docker run --name jira_software --detach --mount source=jira_home,destination=/var/atlassian/jira --publish 8080:8080 cptactionhank/atlassian-jira
+```
+
+## (참고) Named Volume 생성 
+```
+docker volume create jira_home
+```
