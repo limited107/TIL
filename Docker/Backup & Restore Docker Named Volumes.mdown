@@ -14,8 +14,8 @@ docker run -it --rm -v jira_home:/target_volume -v /tmp/docker_backup_volume:/ba
 ## 2. 복구(Restore)
 jira_home named volume을 마운트 시키고, 압축을 풉니다. 
 (named volume에 내용을 삭제함.
-- * matches all non-dot-files
-- .[!.]* matches all dot files except . 
+- ```*``` matches all non-dot-files
+- ```.[!.]*``` matches all dot files except . 
 - files whose name begins with .., and ..?* matches all dot-dot files except ...
 ```
 docker run -it --rm -v jira_home:/target_volume -v /home/bokuk/Service/docker_volume:/backup_volume alpine \
