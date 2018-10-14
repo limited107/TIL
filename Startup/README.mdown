@@ -37,5 +37,7 @@ gitlab:
 
 
 ## 3. Gitlab, jira integration 
+https://docs.gitlab.com/ee/user/project/integrations/jira.html
+
 ## 4. Spec
 ## 5. Spring container based deploy
