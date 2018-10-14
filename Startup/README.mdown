@@ -1,0 +1,40 @@
+# 개발환경 구성하기
+## 1. Jira software
+프로젝트 일정 관리
+```
+docker run --name jira_software --detach --mount source=jira_home,destination=/var/atlassian/jira \
+--publish 8080:8080 cptactionhank/atlassian-jira
+```
+
+## 2. Gitlab
+소스코드 형상 관리
+
+* hostname
+* external_url
+* gitlab_rails['gitlab_shell_ssh_port']는 ssh port와 동일하게 설정
+* ports (extneral : container port)
+
+```
+gitlab:
+  image: 'gitlab/gitlab-ce:latest'
+  restart: always
+  hostname: '192.168.0.12'
+  environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      external_url 'http://192.168.0.12'
+      gitlab_rails['gitlab_shell_ssh_port'] = 10022
+      # Add any other gitlab.rb configuration here, each on its own line
+  ports:
+    - '10080:80'
+    - '10443:443'
+    - '10022:22'
+  volumes:
+    - 'GITLAB_CONFIG:/etc/gitlab'
+    - 'GITLAB_LOG:/var/log/gitlab'
+    - 'GITLAB_DATA:/var/opt/gitlab'
+```
+
+
+## 3. Gitlab, jira integration 
+## 4. Spec
+## 5. Spring container based deploy
