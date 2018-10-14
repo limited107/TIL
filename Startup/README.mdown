@@ -8,6 +8,7 @@ docker run --name jira_software --detach --mount source=JIRA_HOME,destination=/v
 
 ## 2. Gitlab
 소스코드 형상 관리
+https://docs.gitlab.com/omnibus/docker/#pre-configure-docker-container
 
 * hostname
 * external_url
