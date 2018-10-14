@@ -2,7 +2,7 @@
 ## 1. Jira software
 프로젝트 일정 관리
 ```
-docker run --name jira_software --detach --mount source=jira_home,destination=/var/atlassian/jira \
+docker run --name jira_software --detach --mount source=JIRA_HOME,destination=/var/atlassian/jira \
 --publish 8080:8080 cptactionhank/atlassian-jira
 ```
 
