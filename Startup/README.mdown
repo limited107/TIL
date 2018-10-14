@@ -51,7 +51,7 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 ### 6.2. InfluxDb
 ## 7. MongoDb
 ## 8. ElasticSearch
-
+## 9. Fluentd, Filebeat
 -----
 
 ## Vue
