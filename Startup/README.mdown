@@ -52,6 +52,9 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 ## 7. MongoDb
 ## 8. ElasticSearch
 ## 9. Fluentd, Filebeat
+## 10. Nexus maven repository
+라이브러리를 재활용하기 위해 필요
+
 -----
 
 ## Vue
