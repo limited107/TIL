@@ -41,3 +41,12 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 
 ## 4. Spec
 ## 5. Spring container based deploy
+## 6. Monitoring
+### 6.1. Grafana, Superset
+### 6.2. InfluxDb
+## 7. MongoDb
+## 8. ElasticSearch
+
+-----
+
+## Spark, Druid, ES
