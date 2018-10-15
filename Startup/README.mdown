@@ -45,7 +45,7 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 ### 4.1. Spock
 ### 4.2. Cucumber
 ### 4.3. Selenium
-## 5. Spring container based deploy
+## 5. Containerized Spring Boot App
 ## 6. Monitoring
 ### 6.1. Grafana, Superset
 ### 6.2. InfluxDb
