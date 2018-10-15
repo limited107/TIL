@@ -65,3 +65,10 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 ## Vue
 
 ## Spark, Druid, ES
+
+-----
+## Intellij 설정
+### Lombok 설정
+* Install the Lombok plugin
+* Enable Annotation Processing see documentation
+* Install the Latest Maven on your system and configure IntelliJ to use it (as opposed to the bundled one) see documentation
