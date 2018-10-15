@@ -55,6 +55,9 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 ## 10. Nexus maven repository
 라이브러리를 재활용하기 위해 필요
 
+## 11. Sentry
+에러 로그 모니터링 
+
 -----
 
 ## Vue
