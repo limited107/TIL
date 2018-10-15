@@ -59,7 +59,7 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 에러 로그 모니터링 
 
 ## 12. Slack
-
+- 메신저 및 
 -----
 
 ## Vue
