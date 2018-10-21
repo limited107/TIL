@@ -1,0 +1,6 @@
+SpringBoot 2.0 주의사항
+
+spring.http.multipart.enabled=false 에서
+spring.servlet.multipart.enabled=false 
+
+https://www.baeldung.com/spring-apache-file-upload
