@@ -1,6 +1,12 @@
 SpringBoot 2.0 주의사항
 
-spring.http.multipart.enabled=false 에서
-spring.servlet.multipart.enabled=false 
+1. multipart enabled
+* 1.5.x: spring.http.multipart.enabled=false 
+* 2.0.x: spring.servlet.multipart.enabled=false 
+
+2. HttpServletRequest request는 1번만 읽을 수 있음 
+
+3. multipart/form에서 boundary
+boundary는 multipart data를 구분하는 토큰  
 
 https://www.baeldung.com/spring-apache-file-upload
