@@ -1,0 +1,4 @@
+# OS 시작 시 자동실행 제거 
+```bash
+launchctl unload -w /Libary/LaunchAgents/net.juniper.pulsetray.plist
+```
