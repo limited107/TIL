@@ -66,6 +66,10 @@ https://docs.gitlab.com/ee/user/project/integrations/jira.html
 
 ## Spark, Druid, ES
 
+# 서버 구성 
+- Conoha reverse proxy 
+- 노트북 (i3, 8GB, 80G)
+
 -----
 ## Intellij 설정
 ### Lombok 설정
