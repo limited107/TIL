@@ -5,3 +5,8 @@
 
 https://suwoni-codelab.com/git/2018/04/07/Git-reflog/
 
+# 프로젝트 마다 사용자 정보 설정 방법
+```
+git config user.name "{username}"
+git config user.email "{email}"
+```
