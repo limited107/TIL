@@ -1,0 +1,21 @@
+= API SPEC
+:toc:
+:numbered:
+
+== 회원
+=== 회원 가입
+.TABLE NAME
+|===
+| Name | Type | Nullable | Note
+| username | String | X | 이름 
+| password | String | X | 비밀번호
+| email | String | X | 이메일
+| nickname | String | O | 닉네임 
+|===
+
+=== 회원 로그인
+로그인 
+
+== 모임
+=== 모임 생성
+=== 모임 조회 
