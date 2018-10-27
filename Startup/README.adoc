@@ -70,6 +70,9 @@ gitlab:
 === Nexus maven repository
 라이브러리를 재활용하기 위해 필요
 
+=== Redis
+세션 관리
+
 === Sentry
 에러 로그 알림
 - https://github.com/getsentry/onpremise
