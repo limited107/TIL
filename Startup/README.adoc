@@ -1,17 +1,22 @@
-# 개발환경 구성하기
+= 스타트업 컴포넌트 구성
+:sectnums:
+:toc:
+
+== Back-End
+=== 개발환경 구성하기
 각 서비스(컴포넌트)는 독립적인 서비스를 제공한다.
 
-## 1. Jira software
+=== Jira software
 프로젝트 일정 관리
 ```
 docker run --name jira_software --detach --mount source=JIRA_HOME,destination=/var/atlassian/jira \
 --publish 8080:8080 cptactionhank/atlassian-jira
 ```
 
-## 2. Gitlab
+=== Gitlab
 소스코드 형상 관리
 
-### 2.1. Gitlab 설치 
+==== Gitlab 설치 
 https://docs.gitlab.com/omnibus/docker/#pre-configure-docker-container
 
 * hostname
@@ -39,49 +44,55 @@ gitlab:
     - 'GITLAB_DATA:/var/opt/gitlab'
 ```
 
-### 2.2. Jira Integration
+==== Jira Integration
 * https://docs.gitlab.com/ee/user/project/integrations/jira.html
 
-### 2.3. Slack Integration
+==== Slack Integration
 - Integration에서 활성화. 매우 간단
 
-## 4. Spec
-### 4.1. Spock
-### 4.2. Cucumber
-### 4.3. Selenium
+=== Spec
+==== Spock
+==== Cucumber
+==== Selenium
 
-## 5. Containerized Spring Boot App
+=== Containerized Spring Boot App
 
-## 6. Monitoring
-### 6.1. Grafana, Superset
-### 6.2. InfluxDb
-## 7. MongoDb
-## 8. ElasticSearch
-## 9. Fluentd, Filebeat
-## 10. Nexus maven repository
+=== Monitoring
+==== Grafana, Superset
+==== InfluxDb
+=== MongoDb
+=== ElasticSearch, Kibana
+로그 수집 및 조회 
+
+=== Fluentd, Filebeat
+로그 수집 에이전트
+
+=== Nexus maven repository
 라이브러리를 재활용하기 위해 필요
 
-## 11. Sentry
-에러 로그 모니터링 
+=== Sentry
+에러 로그 알림
 - https://github.com/getsentry/onpremise
 - https://docs.sentry.io/clients/java/modules/logback/
 
-## 13. 인증서 
+=== 인증서 
 - Let's encrypt
 
 -----
 
-## Vue
+== Front-End
+=== Vue
 
-## Spark, Druid, ES
-
-# 서버 구성 
-- Conoha reverse proxy 
-- 노트북 (i3, 8GB, 80G)
-
------
-## Intellij 설정
-### Lombok 설정
+== 기타 
+=== Spark, Druid, ES
+=== Intellij 설정
+==== Lombok 설정
 * Install the **Lombok plugin**
 * **Enable Annotation Processing** see documentation
 * Install the Latest Maven on your system and configure IntelliJ to use it (as opposed to the bundled one) see documentation
+
+
+== 서버 구성 
+- Conoha reverse proxy 
+- 노트북 (i3, 8GB, 80G)
+
