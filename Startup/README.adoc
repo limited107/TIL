@@ -67,7 +67,8 @@ gitlab:
 로그 수집 에이전트
 
 === Nexus maven repository
-라이브러리를 재활용하기 위해 필요
+* Jar library 배포 
+* Docker image 배포 
 
 === Redis
 세션 관리
