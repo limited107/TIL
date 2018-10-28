@@ -68,7 +68,13 @@ gitlab:
 
 === Nexus maven repository
 * Jar library 배포 
-* Docker image 배포 
+* Docker image 배포
+
+설치 
+```
+$ docker volume create --name nexus-data
+$ docker run -d -p 8081:8081 --name nexus -v nexus-data:/nexus-data sonatype/nexus3
+```
 
 === Redis
 세션 관리
