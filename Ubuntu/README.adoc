@@ -5,11 +5,15 @@ To make stable connection and more powerful performance, turn off power manageme
 
 edit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
 
+```
 [connection]
 wifi.powersave = 3
+```
+
 Change the 3 to a 2 and reboot. Then run iwconfig and if it worked you should see Power Management:off
 
 $ iwconfig
+```
 lo        no wireless extensions.
 
 wlp6s0    IEEE 802.11abgn  ESSID:"UoA-Device"  
@@ -24,3 +28,4 @@ wlp6s0    IEEE 802.11abgn  ESSID:"UoA-Device"
 enp5s0    no wireless extensions.
 
 enp0s31f6 no wireless extensions
+```
