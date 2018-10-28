@@ -1,0 +1,26 @@
+= Ubuntu Wifi 끊기는 경우 power management off 하기 
+
+Turn off power management for wifi on ubuntu
+To make stable connection and more powerful performance, turn off power management for wifi is one of choices.
+
+edit /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+
+[connection]
+wifi.powersave = 3
+Change the 3 to a 2 and reboot. Then run iwconfig and if it worked you should see Power Management:off
+
+$ iwconfig
+lo        no wireless extensions.
+
+wlp6s0    IEEE 802.11abgn  ESSID:"UoA-Device"  
+          Mode:Managed  Frequency:5.805 GHz  Access Point: B8:38:61:4F:18:9C   
+          Bit Rate=360 Mb/s   Tx-Power=17 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:off
+          Link Quality=47/70  Signal level=-63 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:1   Missed beacon:0
+
+enp5s0    no wireless extensions.
+
+enp0s31f6 no wireless extensions
