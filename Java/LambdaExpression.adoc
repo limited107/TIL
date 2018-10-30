@@ -1,3 +1,70 @@
 = Lambda Expression
 Park Bokuk <limited107@gmail.com>
 :sectnums:
+
+[.lead]
+Lambda Expression을 설명합니다. (Java 8 in Action - 3장)
+
+Lambda와 Anonymous Function으로 abstract method를 구현한 예제입니다.
+
+[source, java]
+----
+// Lambda 
+Runnable r1 = () -> System.out.println("Hello World 1");
+
+// Anonymous Function
+Ruannable r2 = new Runnable() {
+  public void run() {
+      System.out.println("Hello World 2");
+  }
+}
+----
+
+== Lambda Expression
+Lambda는 anonymous method를 단순화 한 것입니다.
+
+.Lambda expression 특징
+* 익명
+* 함수 
+* 전달 - lambda expression을 인수로 전달하거나 변수로 저장할 수 있음
+* 간결성 - anonymous method와 비교해서 간단
+
+.Lambda expression 구성
+[source]
+----
+(parameters) -> { statements; }
+(parameters) -> expression
+----
+
+.Lambda expression 예시
+* 파라미터 리스트
+- (Apple a1, Apple a2)
+* 화살표 - 파라미터 리스트와 body 구분 
+* Lambda body
+- a1.getWeight().compareTo(a2.getWeight());
+
+[source, java]
+----
+(Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight());
+----
+
+== Lambda는 Functional Interface의 메소드 구현에 사용
+=== Functional Interface
+Functional Interface는 하나의 abstract method를 갖는 interface이다.
+
+[source, java]
+----
+public interface Comparator<T> {
+  int compare(T o1, T o2);
+}
+
+public interface Runnable {
+  void run();
+}
+----
+
+=== Functional Interface의 abstract method와 동일한 signature를 lambda expression을 전달
+* Function descriptor - The signature of abstract method in functional interface is called Functional descriptor. (https://www.manishsanger.com/functional-interface/)
+* Method descriptor - It describes the parameter types and the return type of a method. It does not contain the method name.
+* Signature - It contains the name of the method as well as the parameter types
+(https://stackoverflow.com/a/7526573)
