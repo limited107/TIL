@@ -1,6 +1,6 @@
 = TIL
 Today I Learned!
 
-include::JAVA/README.adoc[leveloffset=+1]
+include::Java/README.adoc[leveloffset=+1]
 
 
