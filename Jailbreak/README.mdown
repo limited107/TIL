@@ -1,6 +1,6 @@
 # 탈옥(Jailbreak) 11.3
 1. Impactor.app 실행
-2. ipa[https://www.google.co.kr/search?q=%22Electra1131-1.0.3-vfs.ipa%22&oq=%22Electra1131-1.0.3-vfs.ipa%22&aqs=chrome.0.69i59.562j0j9&sourceid=chrome&ie=UTF-8] 를 드래그해서 Impactor 프로그램에 올린다
+2. [ipa](https://www.google.co.kr/search?q=%22Electra1131-1.0.3-vfs.ipa%22&oq=%22Electra1131-1.0.3-vfs.ipa%22&aqs=chrome.0.69i59.562j0j9&sourceid=chrome&ie=UTF-8) 를 드래그해서 Impactor 프로그램에 올린다
 3. iCloud 아이디 비밀번호 입력 
     * iCloud 계정 비밀번호가 노출될 수 있으니 iCloud 계정을 새로 파서 넣음
 4. Elertra 실행
