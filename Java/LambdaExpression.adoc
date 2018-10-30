@@ -50,7 +50,7 @@ Lambda는 anonymous method를 단순화 한 것입니다.
 ----
 
 == Lambda는 Functional Interface의 메소드 구현에 사용
-=== Functional Interface
+=== Functional Interface는 무엇인가
 Functional Interface는 하나의 abstract method를 갖는 interface이다.
 
 [source, java]
