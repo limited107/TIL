@@ -1,5 +1,6 @@
 = Lambda Expression
 Park Bokuk <limited107@gmail.com>
+:toc:
 :sectnums:
 
 [.lead]
