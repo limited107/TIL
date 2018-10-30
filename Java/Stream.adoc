@@ -1,1 +1,22 @@
+= Stream
+Park Bokuk <limited107@gmail.com>
+:toc:
+:sectnums:
 
+[.lead]
+Java Stream을 설명합니다. (Java 8 in Action - 5장)
+
+|===
+| Stream Method | Function Descriptor | Method Descriptor | Note
+| map | (? super T) -> (? extends R) | <R> Stream<R> map(Function<? super T,? extends R> mapper) | 
+| flatMap | (? super T) -> (? extends Stream<? extends R>) | <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper) | 
+|===
+(https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)
+
+== Mapping
+.Java Stream
+[options="header"]
+
+=== map
+=== flatMap 
+flatMap은 각 배열을 스트림이 아니라 **스트림의 콘텐츠**로 매핑한다.
