@@ -1,6 +1,6 @@
 = Java
 
-include::Functional Interface.adoc[]
+include::LambdaExpression.adoc[]
 
 # Object.equals()
 Object 클래스의 equals()는 ==과 동일한 결과를 리턴한다.
