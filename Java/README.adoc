@@ -4,6 +4,7 @@ Park Bokuk <limited107@gmail.com>
 :sectnums:
 
 include::LambdaExpression.adoc[leveloffset=+1]
+include::Stream.adoc[leveloffset=+1]
 
 # Object.equals()
 Object 클래스의 equals()는 ==과 동일한 결과를 리턴한다.
