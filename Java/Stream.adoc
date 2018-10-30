@@ -8,8 +8,8 @@ Java Stream을 설명합니다. (Java 8 in Action - 5장)
 
 |===
 | Stream Method | Function Descriptor | Method Descriptor | Note
-| map | (? super T) -> (? extends R) | <R> Stream<R> map(Function<? super T,? extends R> mapper) | 
-| flatMap | (? super T) -> (? extends Stream<? extends R>) | <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper) | 
+| map | (? super T) -> (? extends R) FIXME | <R> Stream<R> map(Function<? super T,? extends R> mapper) | 
+| flatMap | (? super T) -> (? extends Stream<? extends R>) FIXME | <R> Stream<R> flatMap(Function<? super T,? extends Stream<? extends R>> mapper) | 
 |===
 (https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)
 
