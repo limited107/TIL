@@ -3,7 +3,8 @@ Park Bokuk <limited107@gmail.com>
 :toc:
 :sectnums:
 
-include::LambdaExpression.adoc[leveloffset=+1]
+include::LambdaExpression.adoc[leveloffset=+1] 
+
 include::Stream.adoc[leveloffset=+1]
 
 # Object.equals()
