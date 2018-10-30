@@ -1,8 +1,9 @@
 = TIL
 Park Bokuk <limited107@gmail.com>
-:sectnums:
 :toc:
+:sectnums:
 
+[.lead]
 Today I Learned!
 
 include::Java/README.adoc[leveloffset=+1]
