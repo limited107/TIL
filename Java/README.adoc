@@ -1,5 +1,7 @@
 = Java
 
+include::Functional Interface.adoc[]
+
 # Object.equals()
 Object 클래스의 equals()는 ==과 동일한 결과를 리턴한다.
 String 클래스는 equals()를 오버라이딩하고 있기 때문에 문자열 값이 동일한지 비교한다.
