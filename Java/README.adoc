@@ -1,4 +1,6 @@
 = Java
+Park Bokuk <limited107@gmail.com>
+:sectnums:
 
 include::LambdaExpression.adoc[leveloffset=+1]
 
