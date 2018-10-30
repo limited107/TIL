@@ -1,0 +1,6 @@
+= TIL
+Today I Learned!
+
+include::JAVA/LambdaExpression.adoc[leveloffset=+1]
+
+
