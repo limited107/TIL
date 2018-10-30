@@ -67,7 +67,7 @@ public interface Runnable {
 === Functional Interface의 abstract method와 동일한 function descriptor를 갖는 lambda expression을 전달
 * Function descriptor - The signature of abstract method in functional interface is called Functional descriptor. (https://www.manishsanger.com/functional-interface/)
 * Method descriptor - It describes the parameter types and the return type of a method. It does not contain the method name.
-* Signature - It contains the name of the method as well as the parameter types
+* Signature - It contains the name of the method as well as the parameter types. It does not contain the return type.
 (https://stackoverflow.com/a/7526573)
 
 === Java 8의 대표적인 Functional Interface
