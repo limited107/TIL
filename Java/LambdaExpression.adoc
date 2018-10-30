@@ -69,3 +69,16 @@ public interface Runnable {
 * Method descriptor - It describes the parameter types and the return type of a method. It does not contain the method name.
 * Signature - It contains the name of the method as well as the parameter types
 (https://stackoverflow.com/a/7526573)
+
+=== Java 8의 대표적인 Functional Interface
+.Java 8 Functional Interface
+[options="header"]
+|===
+| Functional Interface | Function Descriptor | Note
+| Runnable | () -> () | void 타입의 인자없는 메서드를 갖고있다
+| Predicate<T> | T -> boolean | 하나의 인자 타입을 갖는다. 반환타입은 boolean 타입으로 고정되어있다
+| Consumer<T> | T -> void | 리턴을 하지않고(void), 인자를 받는 메서드를 갖고있다리턴을 하지않고(void), 인자를 받는 메서드를 갖고있다
+| Function<T, R> | T -> R | 인터페이스 명칭에서부터 알 수 있듯이 전형적인 함수를 지원한다고 보면 된다
+| Supplier<T> | () -> T | 인자는 받지않으며 리턴타입만 존재하는 메서드를 갖고있다 
+|===
+(http://multifrontgarden.tistory.com/125)
