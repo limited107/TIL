@@ -1,0 +1,5 @@
+= Redis Desktop Manager
+[.lead]
+인기있는 Redis GUI Client 입니다.
+
+다운로드: https://sourceforge.net/projects/redis-desktop-manager.mirror
