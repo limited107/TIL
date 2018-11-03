@@ -1,0 +1,7 @@
+= Design Pattern
+Park Bokuk <limited107@gmail.com>
+:toc:
+:sectnums:
+
+include::DesignPattern.adoc[leveloffset=+1]
+include::StrategyPattern.adoc[leveloffset=+1]
