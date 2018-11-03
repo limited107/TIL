@@ -12,7 +12,10 @@ Strategy Pattern에 대해 설명합니다. (Head First Design Patterns - 1장)
 image::images/StrategyPattern-Example-Duck.png[StrategyPattern-Example-Duck]
 
 == 디자인 원칙
-* Identify the aspects of your application that vary and separate them from what stays the same. 애플리케이션에서 달라지는 부분을 찾아내고, 달라지지 않는 부분으로부터 분리시킨다.
-* Program to an interface, not an implementation. 구현이 아닌 인터페이스에 맞춰서 프로그래밍한다.
-* Favor composition over inheritance. 상속보다는 구성을 활용한다.
+* Identify the aspects of your application that vary and separate them from what stays the same. +
+애플리케이션에서 달라지는 부분을 찾아내고, 달라지지 않는 부분으로부터 분리시킨다.
+* Program to an interface, not an implementation. +
+구현이 아닌 인터페이스에 맞춰서 프로그래밍한다.
+* Favor composition over inheritance. +
+상속보다는 구성을 활용한다.
 
