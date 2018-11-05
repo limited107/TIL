@@ -14,4 +14,4 @@ bash: warning: setlocale: LC_CTYPE: cannot change locael (UTF-8): No such file o
 
 Preference - Profiles - Terminal - Set locale variables automatically를 체크 해제합니다.
 
-image::images/Bash-Warning-Setlocale-LC_CTYPE-CannotChangeLocale.png.png[Bash-Warning-Setlocale-LC_CTYPE-CannotChangeLocale]
+image::images/Bash-Warning-Setlocale-LC_CTYPE-CannotChangeLocale.png[Bash-Warning-Setlocale-LC_CTYPE-CannotChangeLocale]
