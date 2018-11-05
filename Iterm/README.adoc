@@ -1,0 +1,17 @@
+= Iterm
+Park Bokuk <limited107@gmail.com>
+:toc:
+:sectnums:
+
+[.lead]
+Iterm 사용법을 다룹니다.
+
+== setlocale 오류 
+[source, bash]
+----
+bash: warning: setlocale: LC_CTYPE: cannot change locael (UTF-8): No such file or directory 
+----
+
+Preference - Profiles - Terminal - Set locale variables automatically를 체크 해제합니다.
+
+image::images/Bash-Warning-Setlocale-LC_CTYPE-CannotChangeLocale.png.png[Bash-Warning-Setlocale-LC_CTYPE-CannotChangeLocale]
