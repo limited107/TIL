@@ -1,0 +1,122 @@
+= Basic Directive
+Park Bokuk <limited107@gmail.com>
+:toc:
+:sectnums:
+
+[abstract]
+.Abstract
+Vue의 기본 directive를 설명합니다.
+
+
+== v-text, v-html innerText 바인딩
+데이터가 innerText에 매핑되어 문자열 출력.
+
+.v-text, v-html
+[options="header"]
+|===
+| Directive | Description
+| v-text, {{}} | innerHtml 속성에 연결됨. HTML 인코딩해서 표출
+| v-html | innerHtml 속성에 연결됨. 태그를 파싱해서 표출. 공격에 취약.
+|===
+
+.v-text, v-html 예시
+[source, html]
+----
+<div id="simple">
+  <h2>{{message}}</h2>
+  <h2 v-text="message"</h2> // <1>
+  <h2 v-html="message"</h2> // <2>
+</div>
+----
+
+== v-bind, v-model attribute 바인딩
+데이터와 Html element의 attribute를 바인딩하기 위해 사용.
+
+.v-bind, v-model
+[options="header"]
+|===
+| Directive | Description | Model -> Html | Html -> Model
+| v-bind | 단방향 바인더 | O | X
+| v-model | 양방향 바인더 | O | O
+|===
+
+[source, html]
+----
+<div id="simple">
+  <img v-bind:src="imagePath"/> // <1>
+  <img :src="imagePath"/> // <1>
+
+  <input type="text" v-model="name" placeholder="이름을 입력하세요"/> // <4>
+  <br/>
+  입력된 이름 : <h2 v-html="name"/>
+</div>
+
+<script>
+var model = {
+  imagePath : "http://image.jpg" // <2>
+};
+
+var simple = new Vue({
+  el : "#simple',
+  data : model // <3>
+});
+
+var simple2 = new Vue({
+  el : "#simple',
+  data : name // <5>
+});
+</script>
+----
+1. v-bind로 단방향 바인딩 설정
+2. data 속성으로 사용될 값 설정
+3. Vue 객체에 data와 element 매핑 설정
+4. v-model로 양방향 바인딩 설정
+
+=== v-model 옵션
+* lazy : 입력폼에 이벤트 발생 시 데이터 동기화 (v-model.lazy={data})
+* number
+* trim
+
+== v-show 속성 값에 따른 렌더링
+v-show는 style의 display 속성으로 노출할지 제어
+
+== v-if, v-else-if, v-else 속성 값에 따른 렌더링
+.v-text, v-html 예시
+[source, html]
+----
+<div id="record">
+  <span v-if"score >= 100">A</span>
+  <span v-else-if"score >= 50">B</span>
+  <span v-else>C</span>
+</div>
+----
+
+== v-for 반복 렌더링
+=== v-for="contact in contacts"
+=== v-for="(val, key) in regions"
+=== template v-for="(contact, index) in contacts"
+//FIXME
+FIXME
+
+== 기타
+* v-pre : 컴파일하지 않고 문자열 그대로 출력
+* v-one : 초기 한 번만 렌더링
+
+== 계산형 속성
+연산 로직이 필요한 경우.
+
+.computed 계산형 속성 예시
+[source, html]
+----
+var vmSum = new Vue({
+  el : "#example",
+  data : { num : 0 },
+  computed : {
+    sum : function() {
+      var n = Number(this.num);
+      if (Number.isNan(n) || n < 1) return 0;
+      return ((1+n) * n) / 2;
+    }
+  }
+});
+----

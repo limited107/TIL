@@ -2,3 +2,5 @@
 Park Bokuk <limited107@gmail.com>
 :toc:
 :sectnums:
+
+include::BasicDirectives.adoc[leveloffset=+1]
