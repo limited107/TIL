@@ -6,8 +6,15 @@ Park Bokuk <limited107@gmail.com>
 [.lead]
 Today I Learned!
 
+== Java
 include::Java/README.adoc[leveloffset=+1]
 
+=== Effective Java
+include::Java/EffectiveJava/README.adoc[leveloffset=+1]
+
+== Design Pattern
 include::DesignPattern/README.adoc[leveloffset=+1]
 
+== Vue
+include::Vue/README.adoc[leveloffset=+1]
 
