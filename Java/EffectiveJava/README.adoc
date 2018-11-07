@@ -1,0 +1,13 @@
+= Effective Java
+Park Bokuk <limited107@gmail.com>
+:toc:
+:sectnums:
+:keywords: composition(컴포지션), inheritance(상속)
+
+[abstract]
+.Abstract
+Effective Java 3rd을 다룹니다.
+
+
+
+== Item 18 상속보다는 컴포지션을 사용하라
