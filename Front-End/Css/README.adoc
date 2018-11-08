@@ -1,0 +1,42 @@
+= CSS
+Park Bokuk <limited107@gmail.com>
+:toc:
+:sectnums:
+
+== CSS Selector
+=== element:nth-child
+Element type에 **관련없이** n번째 Element 선택
+
+=== element:nth-of-type
+Element type과 **관련되어** n번째 Element 선택
+
+==== 테스트
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_nth-of-type
+
+[source, html]
+----
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body > p:nth-child(2) {
+    background: yellow;
+}
+
+p:nth-of-type(2) {
+    background: red;
+}
+</style>
+</head>
+<body>
+
+<h1>hello</h1>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+</body>
+</html>
+----
+
