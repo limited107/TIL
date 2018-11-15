@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>N-Translation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!--<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>-->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<!--<div>-->
+  <!--<textarea form ="translation" id="sourceText" cols="60" rows="10" wrap="soft"></textarea>-->
+  <!--<form method="get" method="post" action="/api/v1/translation" id="translation">-->
+    <!--<input type="submit"/>-->
+  <!--</form>-->
+<!--</div>-->
+
+
+<!--<div id="display">-->
+  <!--Source <span v-text="text"/>-->
+<!--</div>-->
+<!--<div id="google">-->
+  <!--Google <textarea v-text="result" cols="60" rows="10" wrap="soft" disabled></textarea>-->
+<!--</div>-->
+<!--<div id="kakao">-->
+  <!--Kakao <textarea v-text="result" cols="60" rows="10" wrap="soft" disabled></textarea>-->
+<!--</div>-->
+<!--<div id="naver">-->
+  <!--Naver <textarea v-text="result" cols="60" rows="10" wrap="soft" disabled></textarea>-->
+<!--</div>-->
+<div id="request">
+  <textarea v-text="requestUuid" disabled></textarea>
+</div>
+<script>
+  // const axios = require('axios');
+
+
+  // http://127.0.0.1:20000/api/v1/translation/GOOGLE/
+  localStorage.lastname = "d8024a53-4b55-40c7-8a9d-1a650dfd0e32";
+  axios.get('http://localhost:20000/api/v1/translation/GOOGLE/' + localStorage.getItem("lastname"))
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+  //
+  // const requestVm = new Vue({
+  //                           el : '#request',
+  //                           data: {
+  //                             requestUuid: null
+  //                           },
+  //                           mounted() {
+  //                             axios.post("/api/v1/translation", {"sourceText": "A"}).then(response => {
+  //                               console.log("Request!");
+  //                               this.requestUuid = response.data;
+  //                             })
+  //                           }
+  //                         });
+  //
+  // var google = {
+  //   result : 'Google'
+  // };
+  //
+  // var vmGoogle = new Vue({
+  //                          el: '#google',
+  //                          data: google
+  //                        });
+  //
+  // var kakao = {
+  //   result : 'Kakao'
+  // };
+  //
+  // var vmKakao = new Vue({
+  //                         el: '#kakao',
+  //                         data: kakao
+  //                       });
+  //
+  // var naver = {
+  //   result : 'Naver'
+  // };
+  //
+  // var vmNaver = new Vue({
+  //                         el: '#naver',
+  //                         data: naver
+  //                       });
+</script>
+</body>
+</html>
