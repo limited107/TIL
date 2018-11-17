@@ -3,3 +3,6 @@
 guest/guest의 경우 비밀번호로 RHp8PmPTb6a1e5Lti157e1PRFCit9IukzO+qDRWtRCSHlO74 을 넣어야함.
 
 https://groups.google.com/forum/#!topic/rabbitmq-users/Brx3tSmNC_8
+
+
+https://stackoverflow.com/questions/41306350/how-to-generate-password-hash-for-rabbitmq-management-http-api
