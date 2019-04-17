@@ -1,6 +1,6 @@
 = MongoDb
 
-== Using ObjectId vs String as your key
+== Using ObjectId vs String as your field
 
 https://stackoverflow.com/a/27897720/1035490
 
