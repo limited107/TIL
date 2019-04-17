@@ -2,16 +2,14 @@
 == Using ObjectId vs String as your key
 https://stackoverflow.com/a/27897720/1035490
 
-ObjectId로 저장하면 좋은 이유 
+* ObjectId로 저장하면 좋은 이유 
 1. 값이 ObjectId hex form일 때 db에 String 이나 ObjectId type으로 저장되어 있는지 고민할 필요없이 ObjectId로 쿼리하면 된다.
 2. ObjectId는 Hex form보다 데이터 크기가 작다. 이는 저장 공간과 인덱스 크기를 효율적이게 한다. (ObjectId 12 bytes, Hex form 24 bytes)
 3. ObjectId를 사용하면 Mongo사용하면 인덱스 효율을 높일 수 있다.
 개인적인 생각으로 4 byte, 5 byte , 3 byte를 single operation으로 비교할 수 있게되고 composite index 같이 효과적으로 탐색할 수 있겠다.
 
-ObjectId 
-a 4-byte value representing the seconds since the Unix epoch,
-a 5-byte random value, and
-a 3-byte counter, starting with a random value.
-
-1. ObjectId form 인것이 
-String form으로 저장하는 것 보다 O
+* ObjectId 구성
+- a 4-byte value representing the seconds since the Unix epoch,
+- a 5-byte random value, and
+- a 3-byte counter, starting with a random value.
+- https://docs.mongodb.com/manual/reference/method/ObjectId/
