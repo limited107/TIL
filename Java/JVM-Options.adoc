@@ -1,0 +1,32 @@
+= JVM Options
+== OutOfMemory
+
+https://jarekprzygodzki.wordpress.com/2017/10/15/on-why-and-how-exit-jvm-on-onoutofmemoryerror/
+
+
+1. XX:OnOutOfMemoryError +
+
+2. XX:HeapDumpOnOutOfMemoryError +
+
+3. XX:ExitOnOutOfMemoryError +
+When you enable this option, the JVM exits on the first occurrence of an out-of-memory error. It can be used if you prefer restarting an instance of the JVM rather than handling out of memory errors.
+
+옵션에 대한 실행 순서는 JVM에 따라 다를 수 있어 보입니다.
+https://github.com/JetBrains/jdk8u_hotspot/blob/23e4764f480b9ce81f9553c8198f263ba568c45d/src/share/vm/utilities/debug.cpp#L296-L314
+
+
+== Notation
+This option uses Sun’s implementation format; +
+that is, you must place the colon (:) between the -XX and the option name followed by 
+a the necessary operator to indicate enabling (+) or disabling (-) the new hash function.
+
+For Example: +
+-XX:[+|-]UseNewHashFunction
+Explicitly enables/disable the new hash function.
+
+== -X, -XX Meaning
+=== -X General Purpose Options
+Non-standard options are general purpose options that are specific to the Java HotSpot Virtual Machine, so they are not guaranteed to be supported by all JVM implementations, and are subject to change. These options start with -X.
+
+=== -XX Advanced Options
+Advanced options are not recommended for casual use. These are developer options used for tuning specific areas of the Java HotSpot Virtual Machine operation that often have specific system requirements and may require privileged access to system configuration parameters. They are also not guaranteed to be supported by all JVM implementations, and are subject to change. Advanced options start with -XX.
